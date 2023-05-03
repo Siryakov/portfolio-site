@@ -1,0 +1,370 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+ /* установка общих свойств для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* установка свойств для body */
+body {
+  background-color: #FFF7DF;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+/* установка свойств для header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  
+}
+#about{
+  margin: 1.2% auto ;
+  
+}
+
+/* установка свойств для #logo span */
+header #logo span {
+  font-size: 2em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+/* установка свойств для #logo и #about элементов, когда ширина экрана больше 700px */
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.6em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+/* установка свойств для #logo и #about элементов, когда ширина экрана меньше или равна 700px */
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* установка свойств для div#top */
+div#top {
+  padding-top: 80px;
+}
+
+/* установка свойств для #about */
+#about {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+/* установка свойств для #about > a */
+#about > a {
+  color: #000;
+}
+
+/* установка свойств для #about > a:hover */
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+/* установка свойств для #about > a:not(:last-child) */
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+/* установка свойств для .fixed */
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+/* установка свойств для header.fixed #logo */
+header.fixed #logo {
+  color: #baac80;
+}
+
+/* установка свойств для .fixed #about a */
+.fixed #about a {
+  color: #000;
+}
+
+/* установка свойств для .fixed #about a:hover */
+.fixed #about a:hover {
+  color: #000;
+}
+
+
+
+#banner{
+  display: flex;
+  height: 80vh ;
+  width: 80vh;
+  margin-top: 10%;
+  
+}
+.text1{
+  font-size: 70px;
+  
+}
+.text2{
+  font-size: 50px;
+}
+
+
+
+/* установка свойств для #top */
+#top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1%;
+  padding: 2% 2%;
+}
+
+
+
+
+  .face-1 {
+    width: 15%;
+    float: left;
+    margin-right:1.9% ;
+  }
+  
+  .curriculum-vitae {
+    font-size: 270%;
+    
+    line-height: 1.8em;
+  }
+  /* для экранов шириной до 480px */
+@media screen and (max-width: 480px) {
+  .curriculum-vitae {
+    font-size: 50%;
+  }
+}
+
+
+/* для экранов шириной от 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .curriculum-vitae {
+    font-size: 80%;
+  }
+}
+
+/* для экранов шириной от 769px до 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .curriculum-vitae {
+    font-size: 160%;
+  }
+}
+
+/* для экранов шириной от 1025px и более */
+@media screen and (min-width: 1025px) {
+  .curriculum-vitae {
+    font-size: 270%;
+  }
+}
+
+  .text-java-2-1-2 {
+    float: right;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+   
+  #main{
+    padding: 5% 20%;
+    width: 100%;
+    float: left;
+    border-top: 2px solid orange;
+    color: #484848;
+    font-size: 1.8em;
+  }
+  
+  #main h2{
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  
+   main div{
+    width: 48%;
+    margin-right: 2%;
+    float:left;
+  } 
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #FFCD29;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin:  115px;
+  }
+  
+  .button:hover {
+    background-color: #ffbf00;
+  }
+  
+  .button:active {
+    background-color: #ff9900;
+  }
+
+  /* Медиа-запрос для уменьшения размера кнопок и расстояния между ними при ширине экрана менее 600 пикселей */
+@media only screen and (max-width: 1000px) {
+  .button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .button {
+    padding: 1px 3px;
+    margin: 0 2px;
+    font-size: 30px;
+  }
+}
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-1,
+.box-2 {
+  flex: 1;
+  height: 560px;
+  position: relative; /* добавляем позиционирование */
+}
+
+.snake-game-1,
+.devenv-i6hin22sgb-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-1 > * {
+  margin-right: 10px;
+}
+
+
+.caption-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: orange; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.caption-white{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: orange; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+.box-1:hover .caption-black,
+.box-2:hover .caption-white {
+  opacity: 1; /* показываем заголовок при наведении курсора на изображение */
+}
+
+@media (max-width: 768px) {
+  .container-1 > * {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

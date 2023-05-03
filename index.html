@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Kirill Siryakov - Programmer</title>
+</head>
+<body>
+  <div class="container">
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <img src="./img/Siryakov_Logo.png" width="350px" alt="logo">
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+      <a href="#" title="Портфолио" onclick="slowScroll('#portfolio')">Портфолио</a>
+      <a href="#" title="Ответы на вопросы" onclick="slowScroll('')">FAQ</a>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner_text">
+      <div class="banner_text1"> Разработка<br/>
+        приложений под<br/>
+        Windows<br/>
+        Android</div>
+        <div class="banner_text2">Я предоставляем услуги по разработке <br/>
+          настольных приложений для Windows, Anroid. <br/>
+          Я создаю настраиваемые и масштабируемые<br/>
+           приложения любой сложности</div>
+    </div>
+    <div class="banner_img">
+      <img src="/img/banner_image.png" height="650px" alt="">
+    </div>
+  </div>
+  
+  <div class="BIO">
+    <div class="BIO_img">
+      <img src="/img/face.png" height="350px" width="270px" alt="">
+    </div>
+    <div class="BIO_TEXT">
+      <h1 class="BIO_name">Кирилл Сиряков </h1>
+      <ul class="BIO_li">
+        <li>C++, Java</li>
+        <li>Программист </li>
+        <li>Нижний Новгород </li>
+        <li> ННГУ</li>
+        <li>21 год</li>
+      </ul>
+    </div>
+    <div class="BIO_gif">
+      <img src="/gif/text(java)-2_1.gif" width="800px" alt="">
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="snake_gif">
+      <a href="https://github.com/myusername/myproject_snake">
+        <img src="/gif/змейка .gif" height="600px" width="600px" alt="" class="snake">
+        <div class="gif-title">Змейка</div>
+      </a>
+    </div>
+    <div class="ray-tracing_gif">
+      <a href="https://github.com/myusername/myproject_raytracing">
+        <img src="/gif/ray-tracing.gif" height="600px" width="600px" alt="" class="ray-tracing">
+        <div class="gif-title">Ray-tracing</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="main_text">
+    <p>  Я - программист с тремя годами стада. За это время я успел освоить языки программирования Java и C++ на высоком уровне, а также Python на среднем уровне.
+      Я также знаком с HTML и CSS, что позволяет мне создавать красивые и функциональные веб-приложения.  
+       Я умею писать код, который работает быстро и эффективно, используя самые передовые технологии и подходы.
+      Благодаря моему опыту я знаком со стандартными и самыми популярными фреймворками для языков программирования Java и C++. К ним относятся Spring, Hibernate, Struts, JUnit и другие. Я также имею опыт работы с Qt и Boost для C++, что позволяет мне создавать качественные приложения на этом языке.
+        Я считаю, что программирование - это не просто работа, но и хобби. Я всегда стремлюсь улучшить свои навыки и изучить новые технологии, чтобы быть в курсе последних тенденций в этой быстро развивающейся сфере.
+      Если у вас есть проект, который требует высококвалифицированного программиста, то я готов помочь вам. Свяжитесь со мной, и мы обсудим, как я могу внести свой вклад в ваш проект.
+      </p>
+  </div>
+
+  <div class="button-group">
+    <a href="https://github.com" class="button">GitHub</a>
+    <a href="https://telegram.org" class="button">Telegram</a>
+    <a href="https://onlyfans.com" class="button">OnlyFans</a>
+  </div>
+  
+
+</div>
+
+    
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>

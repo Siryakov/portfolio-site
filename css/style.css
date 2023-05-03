@@ -1,0 +1,266 @@
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+/* установка общих свойств для всех элементов */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+	max-width: 1300px;
+	margin: 0px auto;
+  overflow: hidden;
+}
+/* установка свойств для body */
+body {
+background-color: #FFF7DF;
+font-family: Trebuchet MS, Helvetica;
+}
+
+/* установка свойств для header */
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 999;
+/* margin: 1% ; */
+}
+#about{
+  margin: 1%;
+}
+
+/* установка свойств для #logo span */
+header #logo span {
+font-size: 2em;
+line-height: 45px;
+margin-left: 40px;
+font-family: 'Suez One', serif;
+}
+
+/* установка свойств для #logo и #about элементов, когда ширина экрана больше 700px */
+@media (min-width: 701px) {
+#logo {
+  float: left;
+  width: 30%;
+  font-size: 1.6em;
+}
+
+#about {
+  float: right;
+  width: 67%;
+}
+}
+
+/* установка свойств для #logo и #about элементов, когда ширина экрана меньше или равна 700px */
+@media (max-width: 700px) {
+#logo {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+#about {
+  float: left;
+  width: 100%;
+}
+}
+
+/* установка свойств для div#top */
+div#top {
+padding-top: 80px;
+}
+
+/* установка свойств для #about */
+#about {
+text-align: center;
+font-size: 1.5em;
+line-height: 40px;
+margin-bottom: 20px;
+}
+
+/* установка свойств для #about > a */
+#about > a {
+color: #000;
+}
+
+/* установка свойств для #about > a:hover */
+#about > a:hover {
+color: #b0b0b0;
+text-decoration: underline;
+}
+
+/* установка свойств для #about > a:not(:last-child) */
+#about > a:not(:last-child) {
+margin-right: 7%;
+}
+
+/* установка свойств для .fixed */
+.fixed {
+z-index: 5000;
+background-color: #fff;
+border-bottom: 1px solid silver;
+}
+
+/* установка свойств для header.fixed #logo */
+header.fixed #logo {
+color: #baac80;
+}
+
+/* установка свойств для .fixed #about a */
+.fixed #about a {
+color: #000;
+}
+
+/* установка свойств для .fixed #about a:hover */
+.fixed #about a:hover {
+color: #000;
+}
+
+.banner{
+
+  display: flex;
+  margin-top:150px ;
+  background-color: #b0b0b0;
+  justify-content: space-around;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.banner_text1{
+  margin-bottom: 100px;
+  font-size: 75px;
+}
+
+
+.BIO{
+  display: flex;
+  justify-content:space-between;
+  font-size: 35px;
+  margin-bottom: 35px; 
+}
+
+.BIO_img{
+  margin-right: 35px;
+}
+.BIO_name{
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+.BIO_gif{
+  
+  max-width: 100%;
+  
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.snake_gif,
+.ray-tracing_gif {
+  position: relative;
+  display: inline-block;
+}
+
+.gif-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.snake_gif::before,
+.ray-tracing_gif::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.snake_gif:hover .gif-title,
+.ray-tracing_gif:hover .gif-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+.snake_gif:hover::before,
+.ray-tracing_gif:hover::before {
+  opacity: 1;
+}
+
+.main_text {
+  display: flex;
+  margin-top: 35px;
+  font-size: 45px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.button {
+
+margin-top: 55px;
+  padding: 45px 120px;
+  background-color: rgb(255,205,41);
+  border: none;
+  border-radius: 35px;
+  color: #333;
+  font-size: 16px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 14px;
+  }
+}
