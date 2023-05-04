@@ -7,37 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    
     <title>Kirill Siryakov - Programmer</title>
 </head>
 <body>
   <div class="container">
   <header>
-    <div id="logo" onclick="slowScroll('#top')">
+    <div id="logo" onclick="slowScroll('#banner')">
       <img src="./img/Siryakov_Logo.png" width="350px" alt="logo">
     </div>
     <div id="about">
-      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
-      <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
-      <a href="#" title="Портфолио" onclick="slowScroll('#portfolio')">Портфолио</a>
-      <a href="#" title="Ответы на вопросы" onclick="slowScroll('')">FAQ</a>
+      <a href="#" title="Баннер" onclick="slowScroll('#banner')">Возможности</a>
+      <a href="#" title="Портфолио" onclick="slowScroll('#project')">Портфолио</a>
+      <a href="#" title="Контакты" onclick="slowScroll('#contact_id')">Контакты</a>
+      
+      <a href="#" title="Ответы на вопросы" onclick="slowScroll('#footer')">FAQ</a>
     </div>
   </header>
 
-  <div class="banner">
-    <div class="banner_text">
-      <div class="banner_text1"> Разработка<br/>
-        приложений под<br/>
-        Windows<br/>
-        Android</div>
-        <div class="banner_text2">Я предоставляем услуги по разработке <br/>
-          настольных приложений для Windows, Anroid. <br/>
-          Я создаю настраиваемые и масштабируемые<br/>
-           приложения любой сложности</div>
-    </div>
-    <div class="banner_img">
-      <img src="/img/banner_image.png" height="650px" alt="">
+  <div id="banner">
+    <div class="banner">
+      <div class="background"></div> <!-- Добавить дополнительный элемент -->
+      <div class="banner_text">
+        <div class="banner_text1"> Разработка<br/>
+          приложений под<br/>
+          Windows<br/>
+          Android</div>
+          <div class="banner_text2">Я предоставляем услуги по разработке <br/>
+            настольных приложений для Windows, Anroid. <br/>
+            Я создаю настраиваемые и масштабируемые<br/>
+            приложения любой сложности</div>
+      </div>
+      <div class="banner_img">
+        <img src="/img/banner_image.png" height="650px" alt="">
+      </div>
     </div>
   </div>
+  
+  
   
   <div class="BIO">
     <div class="BIO_img">
@@ -58,7 +68,7 @@
     </div>
   </div>
 
-  <div class="project">
+  <div id="project" class="project">
     <div class="snake_gif">
       <a href="https://github.com/myusername/myproject_snake">
         <img src="/gif/змейка .gif" height="600px" width="600px" alt="" class="snake">
@@ -74,41 +84,80 @@
   </div>
 
   <div class="main_text">
-    <p>  Я - программист с тремя годами стада. За это время я успел освоить языки программирования Java и C++ на высоком уровне, а также Python на среднем уровне.
-      Я также знаком с HTML и CSS, что позволяет мне создавать красивые и функциональные веб-приложения.  
-       Я умею писать код, который работает быстро и эффективно, используя самые передовые технологии и подходы.
-      Благодаря моему опыту я знаком со стандартными и самыми популярными фреймворками для языков программирования Java и C++. К ним относятся Spring, Hibernate, Struts, JUnit и другие. Я также имею опыт работы с Qt и Boost для C++, что позволяет мне создавать качественные приложения на этом языке.
-        Я считаю, что программирование - это не просто работа, но и хобби. Я всегда стремлюсь улучшить свои навыки и изучить новые технологии, чтобы быть в курсе последних тенденций в этой быстро развивающейся сфере.
+    <p> Программист с тремя годами стажа. За это время  успел освоить языки программирования Java и C++ на высоком уровне, а также Python на среднем уровне.
+      Знаком с HTML и CSS, что позволяет мне создавать красивые и функциональные веб-приложения.  
+       Умею писать код, который работает быстро и эффективно, используя самые передовые технологии и подходы.
+      Благодаря моему опыту знаком со стандартными и самыми популярными фреймворками для языков программирования Java и C++. К ним относятся Spring, Hibernate, Struts, JUnit и другие. Я также имею опыт работы с Qt и Boost для C++, что позволяет мне создавать качественные приложения на этом языке.
+        Считаю, что программирование - это не просто работа, но и хобби. Я всегда стремлюсь улучшить свои навыки и изучить новые технологии, чтобы быть в курсе последних тенденций в этой быстро развивающейся сфере.
       Если у вас есть проект, который требует высококвалифицированного программиста, то я готов помочь вам. Свяжитесь со мной, и мы обсудим, как я могу внести свой вклад в ваш проект.
       </p>
   </div>
-
-  <div class="button-group">
-    <a href="https://github.com" class="button">GitHub</a>
-    <a href="https://telegram.org" class="button">Telegram</a>
-    <a href="https://onlyfans.com" class="button">OnlyFans</a>
+  <div id="contact_id">
+    <div class="button-group">
+      <a href="https://github.com" class="button">GitHub</a>
+      <a href="https://telegram.org" class="button">Telegram</a>
+      <a href="https://onlyfans.com" class="button">OnlyFans</a>
+    </div>
   </div>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
 
 </div>
 
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function slowScroll(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+  $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+    else
+      $("header").attr("class", "fixed");
+  });
+</script>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
 
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-        $("header").removeClass("fixed");
-      else
-        $("header").attr("class", "fixed");
-    });
   </script>
 </body>
+
+<footer id="footer">
+  <div class="container_footer">
+    <div class="row">
+      <div class="col-md-6">
+       
+        <div class="faq">
+          <div class="question">
+            <h3>Как я могу связаться с вами?</h3>
+            <p>Вы можете связаться с нами по электронной почте или по Telegram.</p>
+          </div>
+          <div class="question">
+            <h3>Какие виды платежей вы принимаете?</h3>
+            <p>Вы можете воспользоваться кредитными картами, PayPal и банковским переводом.</p>
+          </div>
+          <div class="question">
+            <h3>Какой срок выполнения заказа?</h3>
+            <p>Каждый заказ индивидуален, поэтому сроки оговариваются отдельно.</p>
+          </div>
+          <div class="question">
+            <h3>Что делать, если меня не устроил конечный результат?</h3>
+            <p>Вы можете связаться со мной и мы решим ваш вопрос.</p>
+          </div>
+      
+          <div class="info text-center">
+            <h3>Контактная информация:</h3>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Email: info@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 </html>
