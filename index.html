@@ -7,9 +7,10 @@
     
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"> -->
+
     
     <title>Kirill Siryakov-Programmer</title>
 </head>
@@ -17,14 +18,13 @@
   <div class="container">
   <header>
     <div id="logo" onclick="slowScroll('#banner')">
-      <img src="./img/Siryakov_Logo.png" width="350px" alt="logo">
+      <img src="img/Siryakov_Logo2.png" width="350px" alt="logo">
     </div>
-    <div id="about">
-      <a href="#" title="Баннер" onclick="slowScroll('#banner')">Возможности</a>
-      <a href="#" title="Портфолио" onclick="slowScroll('#project')">Портфолио</a>
-      <a href="#" title="Контакты" onclick="slowScroll('#contact_id')">Контакты</a>
-      
-      <a href="#" title="Ответы на вопросы" onclick="slowScroll('#footer')">FAQ</a>
+    <div class="about" id="about">
+      <a href="#" class="href_about" title="Баннер" onclick="slowScroll('#banner')">Возможности</a>
+      <a href="#" class="href_about" title="Портфолио" onclick="slowScroll('#project')">Портфолио</a>
+      <a href="#" class="href_about" title="Контакты" onclick="slowScroll('#contact_id')">Контакты</a>
+      <a href="#" class="href_about" title="Ответы на вопросы" onclick="slowScroll('#footer')">FAQ</a>
     </div>
   </header>
 
@@ -36,13 +36,13 @@
           приложений под<br/>
           Windows<br/>
           Android</div>
-          <div class="banner_text2">Я предоставляем услуги по разработке <br/>
+          <div class="banner_text2">Услуги по разработке <br/>
             настольных приложений для Windows, Anroid. <br/>
-            Я создаю настраиваемые и масштабируемые<br/>
+            Создаю настраиваемые и масштабируемые<br/>
             приложения любой сложности</div>
       </div>
       <div class="banner_img">
-        <img src="/img/banner_image.png" height="650px" alt="">
+        <img src="img/banner_image.png" height="650px" alt="">
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
   
   <div class="BIO">
     <div class="BIO_img">
-      <img src="/img/face.png" height="350px" width="270px" alt="">
+      <img src="img/face.png" height="350px" width="270px" alt="">
     </div>
     <div class="BIO_TEXT">
       <h1 class="BIO_name">Кирилл Сиряков </h1>
@@ -64,20 +64,20 @@
       </ul>
     </div>
     <div class="BIO_gif">
-      <img src="/gif/text(java)-2_1.gif" width="800px" alt="">
+      <img src="gif/text(java)-2_1.gif" width="800px" alt="">
     </div>
   </div>
 
   <div id="project" class="project">
     <div class="snake_gif">
       <a href="https://github.com/myusername/myproject_snake">
-        <img src="/gif/змейка .gif" height="600px" width="600px" alt="" class="snake">
+        <img src="gif/змейка .gif" height="600px" width="600px" alt="" class="snake">
         <div class="gif-title">Змейка</div>
       </a>
     </div>
     <div class="ray-tracing_gif">
       <a href="https://github.com/myusername/myproject_raytracing">
-        <img src="/gif/ray-tracing.gif" height="600px" width="600px" alt="" class="ray-tracing">
+        <img src="gif/ray-tracing.gif" height="600px" width="600px" alt="" class="ray-tracing">
         <div class="gif-title">Ray-tracing</div>
       </a>
     </div>
@@ -133,7 +133,7 @@
         <div class="faq">
           <div class="question">
             <h3>Как я могу связаться с вами?</h3>
-            <p>Вы можете связаться с нами по электронной почте или по Telegram.</p>
+            <p>Вы можете связаться со мной по электронной почте или по Telegram.</p>
           </div>
           <div class="question">
             <h3>Какие виды платежей вы принимаете?</h3>

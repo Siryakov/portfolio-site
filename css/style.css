@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 
 /* установка общих свойств для всех элементов */
@@ -12,14 +12,14 @@ box-sizing: border-box;
 	max-width: 1300px;
 	margin: 0px auto;
   overflow: hidden;
+ 
 }
 /* установка свойств для body */
 body {
 background-color: rgb(255, 247, 223);
-/* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Bebas Neue', cursive; */
-font-family: 'Source Sans Pro', sans-serif;
 
+font-family: 'Source Sans Pro', sans-serif ;
+font-weight:600;
 }
 
 /* установка свойств для header */
@@ -29,18 +29,18 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: 999;
-/* margin: 1% ; */
 }
 #about{
   margin: 1%;
 }
+
 
 /* установка свойств для #logo span */
 header #logo span {
 font-size: 2em;
 line-height: 45px;
 margin-left: 40px;
-/* font-family: 'Suez One', serif; */
+
 }
 
 /* установка свойств для #logo и #about элементов, когда ширина экрана больше 700px */
@@ -54,6 +54,7 @@ margin-left: 40px;
 #about {
   float: right;
   width: 67%;
+  
 }
 }
 
@@ -82,22 +83,29 @@ text-align: center;
 font-size: 1.5em;
 line-height: 40px;
 margin-bottom: 20px;
+text-decoration: none !important;
+border: none !important;
 }
 
 /* установка свойств для #about > a */
 #about > a {
 color: #000;
+text-decoration: none !important;
+border: none !important;
 }
 
 /* установка свойств для #about > a:hover */
 #about > a:hover {
 color: #b0b0b0;
-text-decoration: underline;
+text-decoration: none !important;
+border: none !important;
 }
 
 /* установка свойств для #about > a:not(:last-child) */
 #about > a:not(:last-child) {
 margin-right: 7%;
+text-decoration: none !important;
+border: none !important;
 }
 
 /* установка свойств для .fixed */
@@ -105,6 +113,8 @@ margin-right: 7%;
 z-index: 5000;
 background-color: #fff;
 border-bottom: 1px solid silver;
+text-decoration: none !important;
+border: none !important;
 }
 
 /* установка свойств для header.fixed #logo */
@@ -130,16 +140,7 @@ color: #000;
   margin-bottom: 50px;
   position: relative; 
 }
-/* 
-.background {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 247, 223, 0.1); 
-  background-image: url(../img/BG.png);
-} */
+
 
 .banner_text {
   position: relative; /* Добавить для относительного позиционирования текста */
@@ -228,7 +229,8 @@ color: #000;
    font-family: 'Bebas Neue', cursive; 
   display: flex;
   margin-top: 35px;
-  font-size: 45px;
+  font-size: 20px;
+  line-height:30px;
 }
 
 .button-group {
@@ -236,11 +238,13 @@ color: #000;
   justify-content: space-around;
   align-items: center;
   margin: 20px 0;
+
 }
 
 .button {
-
-margin-top: 55px;
+  text-decoration: none !important;
+  border: none !important;
+  margin-top: 55px;
   padding: 45px 120px;
   background-color: rgb(255,205,41);
   border: none;
@@ -271,6 +275,7 @@ margin-top: 55px;
 .container_footer {
   max-width: 1300px;
   margin: 0 auto;
+  
 }
 
 .faq {
@@ -279,6 +284,7 @@ margin-top: 55px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 .faq .question {
@@ -310,4 +316,5 @@ footer {
 }
 
 
-
+/* 
+убрать подчёркивания в шапке , исправить логотип  , шрифт в main text переделать  , убрать жирный подвал */
